@@ -1,4 +1,4 @@
-# Puxeddu2020_ModularStructureBrainCorticalConnectivityLifespan
+# Puxeddu2020_BrainAnatomicalModularStructureLifespan
 
 This is the repository for the paper "The modular organization of brain cortical connectivity across the human lifespan" (https://www.sciencedirect.com/science/article/pii/S1053811920304602).
 
