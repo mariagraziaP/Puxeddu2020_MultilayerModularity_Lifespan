@@ -21,6 +21,8 @@ load(fullfile(dir_net,'Network_bin2years')) %net
 %                                    L=39(layers),
 %                                    ITER=1000(number of multilayer networks)
 
+%% 
+
 [N, ~, L, iter] = size(net);
 
 % set genlouvain parameters
@@ -29,6 +31,7 @@ omega = [0.1, 0.5, 1, 5];   % inter-layer coupling
 limit = 10000;
 verbose = false;
 
+% run modularity optimization on all the multilayer networks
 for it=1:iter
     
     Bnet = spalloc(N*L, N*L, N*N*L+2*N*L);
