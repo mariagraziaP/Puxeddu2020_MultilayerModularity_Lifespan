@@ -15,6 +15,8 @@ Here you will find codes to reproduce the analysis of the paper. The codes have 
 Data used in this paper are available in the figshare repository:
   https://figshare.com/articles/Faskowitz2018wsbmLifeSpan_data/6983018
 
+(Credit to: Joshua Faskowitz)
+
 ## Libraries
 
 This project relies on external libraries:
