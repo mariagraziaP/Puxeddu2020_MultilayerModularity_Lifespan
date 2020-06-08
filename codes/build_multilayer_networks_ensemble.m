@@ -20,12 +20,12 @@ savedir_net = 'D:\Mary\work\Lifespan\Data\Network_bootstrap';
 %% load data
 
 load(fullfile(dir_data,'MLNetwork')) %network
-% load a matrix of dimension [N*N*T]: N=114(nodes), L=620(subjects)
+% load a matrix of dimension [N*N*T]: N=114(nodes), T=620(subjects)
 % [after the preprocessing we concatenated all the anatomical networks (one
 % for each subject) in a 3D matrix from the youngest subject to the oldest] 
 
 loadname(fullfile(dir_data,'Age')) %age
-% vector [L*1] containing ages associated to each network
+% vector [T*1] containing ages associated to each network
 
 
 %% binning of the dataset + multilayer networks construction
