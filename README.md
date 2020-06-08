@@ -13,7 +13,8 @@ Here you will find codes to reproduce the analysis of the paper. The codes have 
 Data used in this paper are available in the figshare repository:
   https://figshare.com/articles/Faskowitz2018wsbmLifeSpan_data/6983018
 
-# This project relies on external libraries:
+ 
+This project relies on external libraries:
 - BCT toolbox: to extract measures on brain networks and brain modules (https://sites.google.com/site/bctnet/).
 - genlouvain: package to compute multilayer modularity optimization (http://netwiki.amath.unc.edu/GenLouvain/GenLouvain).
 - cbrewer: to get colors for nice visualizations (https://it.mathworks.com/matlabcentral/fileexchange/34087-cbrewer-colorbrewer-schemes-for-matlab).
