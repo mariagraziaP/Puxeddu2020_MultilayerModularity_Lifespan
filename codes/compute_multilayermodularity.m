@@ -12,6 +12,8 @@ close all
 %% set paths and directories
 
 addpath(genpath('D:\Mary\work\Toolbox\GenLouvain-2.1'));
+addpath(genpath('D:\Mary\work\VizStuff'));
+
 
 dir_net = 'D:\Mary\work\Lifespan\Data\Network_bootstrap';
 savedir_comm = 'D:\Mary\work\Lifespan\Data\Communities';
