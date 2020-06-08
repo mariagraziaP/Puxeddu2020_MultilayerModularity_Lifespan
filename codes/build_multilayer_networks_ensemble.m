@@ -11,6 +11,8 @@ close all
 
 %% set paths and directories
 
+addpath(genpath('D:\Mary\work\Toolbox\BCT'));
+
 dir_data = 'D:\Mary\work\Lifespan\Data';
 savedir_net = 'D:\Mary\work\Lifespan\Data\Network_bootstrap';
 
