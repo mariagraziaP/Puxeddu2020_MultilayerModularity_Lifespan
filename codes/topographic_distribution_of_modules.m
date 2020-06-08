@@ -13,6 +13,9 @@ close all
 
 %% set paths and directories
 
+addpath(genpath('D:\Mary\work\VizStuff'));
+
+
 dir_comm = 'D:\Mary\work\Lifespan\Data\Communities';
 dir_net = 'D:\Mary\work\Lifespan\Data\Network_bootstrap';
 
@@ -177,7 +180,7 @@ colLines = colors([4, 10, 8],:);
 colBounds = colors([3, 9, 7],:);
 col2plot = cat(3, colLines, colBounds);
 
-% number of intra/inter-hemispheric links across lifespanù
+% number of intra/inter-hemispheric links across lifespanÃ¹
 
 matrix_conn = cat(3, conn_lh, conn_rh, conn_ih);
 
@@ -193,7 +196,7 @@ legend([b{1}, b{2}, b{3}], {'Left Hem','Right Hem', 'Inter-Hem'},...
     'Location','best', 'FontSize', 12)
 
 
-% weights of intra/inter-hemispheric links across lifespanù
+% weights of intra/inter-hemispheric links across lifespanÃ¹
 
 matrix_wei = cat(3, wei_lh, wei_rh, wei_ih);
 
