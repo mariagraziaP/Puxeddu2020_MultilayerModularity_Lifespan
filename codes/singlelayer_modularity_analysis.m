@@ -12,6 +12,9 @@ close all
 
 %% set paths and directories
 
+addpath(genpath('D:\Mary\work\VizStuff'));
+
+
 dir_net = 'D:\Mary\work\Lifespan\Data\Network_bootstrap';
 dir_comm = 'D:\Mary\work\Lifespan\Data\Communities';
 savedir = 'D:\Mary\work\Lifespan\Data\Indices';
