@@ -24,13 +24,16 @@ load(fullfile(dir_net,'Network_bin2years')) %net
 % matrix of dimension [N*N*L*ITER]:  N=114(nodes), 
 %                                    L=39(layers),
 %                                    ITER=1000(number of multilayer networks)
+load(fullfile(dir_net,'NullNetwork_bin2years')) %null_net
 
-load(fullfile(dir_net,'Communities_bin2years')) %comm
+load(fullfile(dir_comm,'Communities_bin2years')) %comm
 % matrix of dimension [N*L*4*3*ITER]:   N=114(nodes), 
 %                                       L=39(layers),
 %                                       4= number of omega explored
 %                                       3= number of gamma explored
 %                                       ITER=1000(number of multilayer networks)
+load(fullfile(dir_comm,'Communities_NullModel_bin2years')) %null_comm
+
 
 %% compute single-layer modularity
 
