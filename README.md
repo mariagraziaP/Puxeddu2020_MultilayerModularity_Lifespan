@@ -10,10 +10,13 @@ This is the repository for the paper "The modular organization of brain cortical
 
 Here you will find codes to reproduce the analysis of the paper. The codes have been written in Matlab 2018a, but are also compatible with more recent versions (tested in Matlab 2019b).
 
+## Data
+
 Data used in this paper are available in the figshare repository:
   https://figshare.com/articles/Faskowitz2018wsbmLifeSpan_data/6983018
 
- 
+## Libraries
+
 This project relies on external libraries:
 - BCT toolbox: to extract measures on brain networks and brain modules (https://sites.google.com/site/bctnet/).
 - genlouvain: package to compute multilayer modularity optimization (http://netwiki.amath.unc.edu/GenLouvain/GenLouvain).
