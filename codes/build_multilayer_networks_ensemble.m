@@ -67,6 +67,50 @@ end
 save(fullfile(savedir_net, 'Network_bin2years'), 'net')
 
 
+%% null multilayer network
+
+jdx = cell(length(bound), 1); 
+numjdx = jdx;
+
+for nb=1:length(bound)
+    
+    age1 = bound(nb);
+    if nb==length(bound)
+        age2 = bound(nb+2);
+    else
+        age2 = bound(nb+1);
+    end
+    
+    lower_bound = find(age==age1);
+    higher_bound = find(age==age2);
+    
+    jdx{nb} = lower_bound(1):higher_bound(end);
+    numjdx{nb} = length(lower_bound(1):higher_bound(end));
+
+end
+
+% build a null network - destroy temporal order
+for it=1:iter
+    
+    rand_age = randperm(length(jdx));
+    
+    for i=1:length(jdx)
+        
+        curr_jdx = jdx{rand_age(i)};
+        curr_jdx = curr_jdx(randi([1 numjdx(rand_age(i))], 1, 10));
+        curr_null_net = network(:,:,curr_jdx);
+        null_net(:,:,i,it) = NetworkAveraging_KeepDensity(curr_null_net);
+        
+        clear curr_idx net
+    end
+    clear i
+end
+
+save(fullfile(savedir_net, 'NullNetwork_bin2years'), 'null_net')
+
+
+
+
 %% visualize histogram with age distribution + binning 
 
 NL = length(bound);     % number of layers
