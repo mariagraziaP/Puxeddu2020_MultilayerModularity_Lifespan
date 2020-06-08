@@ -14,6 +14,7 @@ close all
 
 dir_comm = 'D:\Mary\work\Lifespan\Data\Communities';
 savedir_vi = 'D:\Mary\work\Lifespan\Data\Indices';
+outdir_fig = 'D:\Mary\work\Lifespan\Figures';
 
 
 %% load data
@@ -107,7 +108,7 @@ for w=1:length(omega)
                 'FontSize', 14)
         end
         
-        print(gcf, fullfile(savedir_vi,...
+        print(gcf, fullfile(outdir_fig,...
             sprintf('VImatrix_bin2year_w%gg%g.tif', omega(w), gamma(g))),...
             '-dtiffn', '-r300')
     
