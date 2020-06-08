@@ -12,6 +12,9 @@ close all
 
 %% set paths and directories
 
+addpath(genpath('D:\Mary\work\VizStuff'));
+
+
 dir_comm = 'D:\Mary\work\Lifespan\Data\Communities';
 savedir_cn = 'D:\Mary\work\Lifespan\Data\Indices';
 outdir_fig = 'D:\Mary\work\Lifespan\Figures';
