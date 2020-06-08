@@ -18,7 +18,7 @@ savedir_vi = 'D:\Mary\work\Lifespan\Data\Indices';
 
 %% load data
 
-load(fullfile(dir_net,'Network_bin2years')) %comm
+load(fullfile(dir_net,'Communities_bin2yeasrs')) %comm
 % matrix of dimension [N*L*4*3*ITER]:   N=114(nodes), 
 %                                       L=39(layers),
 %                                       4= number of omega explored
